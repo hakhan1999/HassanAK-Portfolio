@@ -2,6 +2,9 @@ header {
     border-bottom: 0.125rem solid var(--border-color);
     position: fixed;
     width: 100%;
+    z-index: 100;
+    background-color: #09090999;
+    backdrop-filter: blur(1.25rem);
 }
 
 header .wrapper {
@@ -42,7 +45,7 @@ nav ul.navbar {
     font-size: var(--para-size);
 }
 
-nav ul.navbar li.contact {
+nav ul.navbar li:last-child {
     display: none;
 }
 
@@ -83,7 +86,7 @@ li.contact-desktop a:after {
     position: absolute;
     bottom: 0;
     background: var(--purple);
-    filter: blur(20px);
+    filter: blur(1.25rem);
     opacity: 0;
     transition: all 0.4s ease-out;
     z-index: -1;
@@ -111,7 +114,7 @@ nav ul.navbar li a::after {
     position: absolute;
     bottom: 0;
     background: var(--white);
-    filter: blur(20px);
+    filter: blur(1.25rem);
     opacity: 0;
     transition: all 0.4s ease-out;
     z-index: -1;

@@ -8,11 +8,11 @@ const Header = () => {
       <div className="wrapper">
         <a href="/" className="home-link">
           <div className="logo-sec">
-            <img src="src/assets/logo.svg" alt="Logo" />
+            <img src="src/assets/images/logo.svg" alt="Logo" />
           </div>
           <div className="name-sec">
             <p className="top">Hassan AK</p>
-            <p className="bottom">Frontend Developer</p>
+            <p className="bottom">Creative Developer</p>
           </div>
         </a>
         <Navbar />

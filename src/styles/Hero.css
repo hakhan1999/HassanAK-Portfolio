@@ -1,0 +1,119 @@
+.hero-sec {
+    padding-top: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-sec .content .floating-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35.25rem;
+    height: 34.313rem;
+    transform: translate(-50%, -50%);
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-0.938rem) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+    }
+}
+
+.hero-sec .content .floating-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-sec .tag {
+    position: absolute;
+    animation: upDownAnimation 2s ease-in-out infinite;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-sec .tag.tag-1 {
+    top: 10rem;
+}
+
+.hero-sec .tag.tag-2 {
+    bottom: 20rem;
+}
+
+.hero-sec h1 span {
+    position: absolute;
+}
+
+.hero-sec .tag.tag-3 {
+    right: 4rem;
+    top: 20rem;
+}
+
+.hero-sec .tag.tag-4 {
+    left: 50%;
+    bottom: 10rem;
+    transform: translateX(-50%);
+}
+
+.hero-sec .tag.tag-5 {
+    right: 4rem;
+    bottom: 20rem;
+}
+
+.hero-sec h1 span.top {
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-sec h1 span.middle {
+    left: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-sec h1 span.bottom {
+    right: 4rem;
+    bottom: 25rem;
+    color: transparent;
+    -webkit-text-stroke: 0.125rem white;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+}
+
+@keyframes upDownAnimation {
+    0% {
+        transform: translateY(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50%) translateY(-0.625rem);
+    }
+
+    100% {
+        transform: translateY(-50%) translateY(0);
+    }
+}
+
+.hero-sec .copyright {
+    position: absolute;
+    bottom: 10rem;
+    width: 15%;
+    font-size: 1.125rem;
+}
+
+.hero-sec .bg-image {
+    height: 60rem;
+}
+
+.hero-sec .bg-image img {
+    object-fit: cover;
+}
