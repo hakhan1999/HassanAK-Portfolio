@@ -1,0 +1,12 @@
+.info-sec .wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.info-sec .wrapper p {
+    font-size: 1.5rem;
+    color: var(--grey);
+}
