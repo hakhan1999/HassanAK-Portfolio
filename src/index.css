@@ -14,6 +14,8 @@
   --maroon: #700000;
   --dark-grey: #525d6f;
   --dark-blue: #191399;
+  --border-color: #272e3a;
+  --para-size: 1.125rem;
 }
 
 * {
@@ -45,4 +47,44 @@ body {
   font-family: "Roboto Mono", serif;
   background-color: var(--black);
   color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+li {
+  transition: all 0.4s ease-out;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.sec-padded {
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.top-padded {
+  padding-top: 8.75rem;
+}
+
+.bottom-padded {
+  padding-bottom: 8.75rem;
 }
