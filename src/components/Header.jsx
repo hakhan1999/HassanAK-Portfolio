@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <div className="wrapper">
         <a href="/" className="home-link">
           <div className="logo-sec">

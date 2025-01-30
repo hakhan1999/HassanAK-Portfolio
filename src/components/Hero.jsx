@@ -1,13 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Hero.css";
 
 const Hero = () => {
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [targetPos, setTargetPos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setTargetPos({ x: e.clientX, y: e.clientY });
+    };
+
+    const cursorSec = document.querySelector(".cursor-sec");
+
+    if (cursorSec) {
+      cursorSec.addEventListener("mousemove", handleMouseMove);
+    }
+
+    return () => {
+      if (cursorSec) {
+        cursorSec.removeEventListener("mousemove", handleMouseMove);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const smoothMove = () => {
+      setCursorPos((prev) => ({
+        x: prev.x + (targetPos.x - prev.x) * 0.1,
+        y: prev.y + (targetPos.y - prev.y) * 0.1,
+      }));
+      requestAnimationFrame(smoothMove);
+    };
+
+    smoothMove();
+  }, [targetPos]);
+
   return (
-    <section className="hero-sec">
-      <div className="cursor"></div>
-      <div className="bg-image">
-        <img src="src/assets/images/hero-bg.svg" alt="Lines Backgroung" />
+    <section className="hero-sec cursor-sec">
+      <div
+        className="cursor"
+        style={{
+          left: `${cursorPos.x}px`,
+          top: `${cursorPos.y}px`,
+          transition: "transform 0.1s ease-out",
+        }}
+      >
+        <div className="cursor-1"></div>
+        <div className="cursor-2"></div>
       </div>
+
+      <div className="bg-image">
+        <img src="src/assets/images/hero-bg.svg" alt="Lines Background" />
+      </div>
+
       <div className="content container">
         <div className="floating-image">
           <img src="src/assets/images/pc-floating.webp" alt="Floating PC" />

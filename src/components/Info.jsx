@@ -3,7 +3,7 @@ import '../styles/Info.css'
 
 const Info = () => {
   return (
-    <section className="container sec-padded info-sec">
+    <section className="info-sec container sec-padded">
       <div className="wrapper">
         <p>
           Do you value a combination of humor and sophisticated technology?
