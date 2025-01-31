@@ -53,6 +53,15 @@
     position: absolute;
 }
 
+.tag {
+    animation: upDownAnimation 2s ease-in-out infinite;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    font-family: "Kode Mono", serif;
+}
+
 .hero-sec .tag.tag-3 {
     right: 4rem;
     top: 20rem;
