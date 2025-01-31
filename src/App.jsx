@@ -5,6 +5,7 @@ import Info from "./components/Info";
 import Services from "./components/Services";
 import Toolkit from "./components/Toolkit";
 import Numbers from "./components/Numbers";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Services />
       <Toolkit />
       <Numbers />
+      <Footer />
     </>
   );
 };
