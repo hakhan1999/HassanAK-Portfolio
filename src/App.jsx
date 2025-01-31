@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Services from "./components/Services";
 import Toolkit from "./components/Toolkit";
+import Numbers from "./components/Numbers";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Info />
       <Services />
       <Toolkit />
+      <Numbers />
     </>
   );
 };
