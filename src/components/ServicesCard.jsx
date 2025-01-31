@@ -18,7 +18,7 @@ const ServicesCard = ({ title, description }) => {
         />
       </div>
       <div className="wrapper">
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>

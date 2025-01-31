@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Services from "./components/Services";
+import Toolkit from "./components/Toolkit";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Info />
       <Services />
+      <Toolkit />
     </>
   );
 };

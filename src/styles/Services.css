@@ -26,7 +26,7 @@
     justify-content: center;
 }
 
-.services-card .wrapper h2 {
+.services-card .wrapper h3 {
     color: var(--grey);
     width: fit-content;
     margin: 0 auto;
@@ -42,7 +42,7 @@
     transition: all 0.4s ease-out;
 }
 
-.cards-wrapper .services-card h2::before {
+.cards-wrapper .services-card h3::before {
     content: '';
     background-image: radial-gradient(circle farthest-corner at 50% 50%, var(--purple), #f02d9f59);
     opacity: 0;
@@ -58,7 +58,7 @@
     transition: all 0.4s ease-out;
 }
 
-.cards-wrapper .services-card:hover h2::before {
+.cards-wrapper .services-card:hover h3::before {
     opacity: 1;
 }
 
@@ -84,7 +84,7 @@
     transform: translateY(-0.313rem);
 }
 
-.services-card.active .wrapper h2 {
+.services-card.active .wrapper h3 {
     color: white;
     margin-bottom: 2rem;
 }
