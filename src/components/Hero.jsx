@@ -10,16 +10,10 @@ const Hero = () => {
       setTargetPos({ x: e.clientX, y: e.clientY });
     };
 
-    const cursorSec = document.querySelector(".cursor-sec");
-
-    if (cursorSec) {
-      cursorSec.addEventListener("mousemove", handleMouseMove);
-    }
+    document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      if (cursorSec) {
-        cursorSec.removeEventListener("mousemove", handleMouseMove);
-      }
+      document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
@@ -42,7 +36,7 @@ const Hero = () => {
         style={{
           left: `${cursorPos.x}px`,
           top: `${cursorPos.y}px`,
-          transition: "transform 0.1s ease-out",
+          transition: "transform 0.4s ease-out",
         }}
       >
         <div className="cursor-1"></div>

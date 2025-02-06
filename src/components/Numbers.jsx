@@ -1,9 +1,9 @@
 import React from "react";
-import '../styles/Numbers.css'
+import "../styles/Numbers.css";
 
 const numbersContent = [
   {
-    id:'1',
+    id: "1",
     symbol: "+",
     number: "60",
     title: "Completed Projects",
@@ -11,7 +11,7 @@ const numbersContent = [
       "More than 60+ projects completed in my professional and between the top rated freelancers in the field",
   },
   {
-    id:'2',
+    id: "2",
     symbol: "%",
     number: "100",
     title: "Satisfaction Rate",
@@ -19,7 +19,7 @@ const numbersContent = [
       "Proud of strong ties with clients built on great talks and top work - every effort paid off",
   },
   {
-    id:'3',
+    id: "3",
     symbol: "+",
     number: "4",
     title: "years of experience",
@@ -30,6 +30,7 @@ const numbersContent = [
 const Numbers = () => {
   return (
     <section className="numbers-sec container sec-padded">
+      <div className="tag ">{`{ some cool numbers }`}</div>
       <div className="wrapper">
         {numbersContent.map((item, index) => (
           <div key={index} className={`number-card card-${item.id}`}>

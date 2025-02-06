@@ -8,6 +8,7 @@ import Numbers from "./components/Numbers";
 import Footer from "./components/Footer";
 import RealTalk from "./components/RealTalk";
 import Clock from "./components/Clock";
+import Perks from "./components/Perks";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Info />
       <Services />
       <Toolkit />
+      <Perks />
       <Numbers />
       <RealTalk />
       <Clock />
