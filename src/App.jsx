@@ -7,6 +7,7 @@ import Toolkit from "./components/Toolkit";
 import Numbers from "./components/Numbers";
 import Footer from "./components/Footer";
 import RealTalk from "./components/RealTalk";
+import Clock from "./components/Clock";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Toolkit />
       <Numbers />
       <RealTalk />
+      <Clock />
       <Footer />
     </>
   );

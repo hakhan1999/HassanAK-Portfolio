@@ -40,10 +40,6 @@
     z-index: 2;
 }
 
-.numbers-sec {
-    background: black;
-}
-
 .numbers-sec .wrapper .number-card.card-1 {
     border: 0.063rem solid var(--blue);
     border-radius: 1rem;

@@ -1,0 +1,88 @@
+.clock-sec .wrapper {
+    border: 0.125rem solid var(--border-color);
+    border-radius: 3.75rem;
+    padding: 5rem;
+}
+
+.clock-sec {
+    position: relative;
+}
+
+.clock-sec::before {
+    background-color: var(--blue);
+    opacity: 0.5;
+    filter: blur(11.25rem);
+    pointer-events: none;
+    position: absolute;
+    inset: 5%;
+    content: '';
+    z-index: -1;
+}
+
+.clock-sec .wrapper .top-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
+.clock-sec .wrapper .top-grid h4 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.clock-sec .wrapper .top-grid h4:nth-child(2) {
+    text-align: center;
+}
+
+.clock-sec .wrapper .top-grid h4:nth-child(3) {
+    text-align: right;
+}
+
+.clock-sec .wrapper .clock span {
+    font-size: 10rem;
+    font-family: 'Press Start 2P';
+    color: var(--blue);
+}
+
+.clock-sec .wrapper .clock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.clock-sec .wrapper .clock .tag {
+    position: absolute;
+    top: -3rem;
+    right: -5rem;
+    animation: none;
+}
+
+.clock-sec .wrapper .bottom-text h4 {
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.clock-wrapper {
+    position: relative;
+}
+
+span.blinking-colon {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

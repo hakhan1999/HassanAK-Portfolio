@@ -131,7 +131,7 @@
 }
 
 .cursor {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 29vw;
