@@ -1,0 +1,117 @@
+.portfolio-sec {
+    background: black;
+}
+
+.portfolio-sec .tag {
+    justify-content: flex-start;
+}
+
+.portfolio-sec h2 {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 65%;
+}
+
+.project .wrapper {
+    cursor: pointer;
+    padding: 1.25rem 1.375rem;
+    padding-bottom: 1.875rem;
+    border-radius: 1.125rem;
+    margin-bottom: -1.875rem;
+    border: 0.063rem solid var(--border-color);
+    background: black;
+}
+
+.project-top .left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-top .left p {
+    text-transform: uppercase;
+}
+
+.project-top .right .tech-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.project-top .right .tech-wrapper .tech-used {
+    padding: 0.625rem 1.375rem;
+    background: var(--blue);
+    border-radius: 6.25rem;
+    font-size: 1.1875rem;
+    line-height: 1.4;
+}
+
+.project-top .right .tech-wrapper .tech-used:last-child {
+    background: transparent;
+}
+
+.project-top .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-bottom .project-content>img {
+    width: 100%;
+    border-radius: 1.125rem;
+}
+
+.project-bottom .project-description {
+    margin: 1.875rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-bottom .project-description>p {
+    color: var(--grey);
+    width: 60%;
+}
+
+.project-bottom .project-description .link a {
+    display: flex;
+    padding: 0.625rem 1.375rem;
+    border-radius: 6.25rem;
+    border: 0.094rem solid var(--pink);
+    gap: 1rem;
+}
+
+.project-description .link {
+    width: fit-content;
+}
+
+.project-bottom .project-description .link a p {
+    font-size: 1.1875rem;
+    line-height: 1.4;
+}
+
+.project:last-child .project-top {
+    padding-bottom: 0;
+}
+
+.project-bottom {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+}
+
+.project.active .project-bottom {
+    max-height: 1000px;
+}
+
+.project-bottom {
+    padding-top: 1.25rem;
+}
+
+.project:last-child .project-bottom {
+    padding-top: 0;
+}
+
+.project:last-child .project-bottom .project-description {
+    margin-bottom: 0;
+}

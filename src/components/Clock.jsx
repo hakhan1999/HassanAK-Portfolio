@@ -16,7 +16,7 @@ const Clock = () => {
     const options = {
       hour: "2-digit",
       minute: "2-digit",
-      hour12: true,
+      hour12: false,
       timeZone: "Asia/Karachi",
     };
     return new Intl.DateTimeFormat("en-US", options).format(date);
@@ -25,7 +25,7 @@ const Clock = () => {
   const [hours, minutes] = formatTime(time).split(/[: ]/);
 
   return (
-    <div className="clock-sec container bottom-padded">
+    <section className="clock-sec container bottom-padded">
       <div className="wrapper">
         <div className="tag">{`{ Available In }`}</div>
         <div className="top-grid">
@@ -45,7 +45,7 @@ const Clock = () => {
           <h4>I am Looking forward to know more about your project!</h4>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

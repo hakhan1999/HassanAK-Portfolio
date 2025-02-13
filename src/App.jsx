@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import RealTalk from "./components/RealTalk";
 import Clock from "./components/Clock";
 import Perks from "./components/Perks";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Info />
       <Services />
       <Toolkit />
+      <Portfolio />
       <Perks />
       <Numbers />
       <RealTalk />
