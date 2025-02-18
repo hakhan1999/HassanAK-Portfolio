@@ -27,6 +27,8 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .project-top .left p {
@@ -114,4 +116,66 @@
 
 .project:last-child .project-bottom .project-description {
     margin-bottom: 0;
+}
+
+.project-top .left:before {
+    content: '';
+    background-color: var(--gradient-blue);
+    opacity: 0;
+    filter: blur(1.25rem);
+    border-radius: 50%;
+    transition: all 0.4s ease-out;
+    position: absolute;
+    inset: 0% -20% 0% -15%;
+    width: 11.813rem;
+    height: 3.125rem;
+    z-index: -1;
+}
+
+.project .wrapper:hover .project-top .left::before {
+    opacity: 1;
+}
+
+.project .wrapper:last-child{
+    margin-bottom: 0;
+}
+
+.btn-wrapper button {
+    padding: 1rem 2rem;
+    display: block;
+    width: fit-content;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: var(--para-size);
+    border: 0.094rem solid var(--border-color);
+    border-radius: 3.125rem;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    font-family: 'Roboto Mono';
+    color: white;
+    cursor: pointer;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-wrapper button:before {
+    content: '';
+    background-image: radial-gradient(circle, #2a1fffb3, #5b185980);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3.125rem;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+}
+
+.btn-wrapper button:hover:before {
+    opacity: 1;
 }

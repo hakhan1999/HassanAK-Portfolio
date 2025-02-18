@@ -80,6 +80,9 @@ const Portfolio = () => {
           <Project key={item.id} project={item} />
         ))}
       </div>
+      <div className="btn-wrapper">
+        <button>More Projects</button>
+      </div>
     </section>
   );
 };
