@@ -51,6 +51,7 @@
 
 .project-top .right .tech-wrapper .tech-used:last-child {
     background: transparent;
+    padding: 0;
 }
 
 .project-top .top-wrapper {
@@ -103,7 +104,7 @@
 }
 
 .project.active .project-bottom {
-    max-height: 1000px;
+    max-height: 62.5rem;
 }
 
 .project-bottom {
@@ -136,7 +137,7 @@
     opacity: 1;
 }
 
-.project .wrapper:last-child{
+.project:last-child .wrapper {
     margin-bottom: 0;
 }
 
@@ -178,4 +179,79 @@
 
 .btn-wrapper button:hover:before {
     opacity: 1;
+}
+
+.portfolio-popup .project-bottom {
+    opacity: 1;
+    max-height: 62.5rem;
+    overflow: visible;
+    padding-top: 0;
+}
+
+.portfolio-popup .project .wrapper {
+    border: none;
+    margin: 0;
+    cursor: auto;
+    border-radius: 0;
+}
+
+.portfolio-popup .project-top .left:before {
+    display: none;
+}
+
+.portfolio-popup .project-bottom .project-description {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.portfolio-popup .project-bottom .project-description::before {
+    content: '';
+    position: absolute;
+    bottom: -1.25rem;
+    height: 0.063rem;
+    width: 100%;
+    background: var(--border-color);
+}
+
+.portfolio-popup .project:last-child .project-bottom .project-description::before {
+    display: none;
+}
+
+.portfolio-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #000000d4;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.portfolio-popup.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.portfolio-popup>.wrapper {
+    margin: 0 4rem;
+    border: 0.063rem solid var(--border-color);
+    border-radius: 1.25rem;
+    overflow-y: scroll;
+    height: calc(100vh - 15rem);
+    background: black;
+}
+
+.portfolio-popup .btn-wrapper button {
+    margin-top: 1rem;
+}
+
+.project:last-child .project-bottom img {
+    padding-top: 1.25rem;
 }

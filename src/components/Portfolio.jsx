@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Portfolio.css";
 import Project from "./Project";
+import Popup from "./Popup";
 
 const projectsContent = [
   {
@@ -69,6 +70,16 @@ const projectsContent = [
 ];
 
 const Portfolio = () => {
+  const [isPopupActive, setIsPopupActive] = useState(false);
+
+  const handleMoreProjectsClick = () => {
+    setIsPopupActive(true);
+  };
+
+  const handlePopupClose = () => {
+    setIsPopupActive(false);
+  };
+
   return (
     <section className="portfolio-sec container sec-padded" id="#portfolio">
       <div className="tag">{`{ Portfolio }`}</div>
@@ -81,8 +92,9 @@ const Portfolio = () => {
         ))}
       </div>
       <div className="btn-wrapper">
-        <button>More Projects</button>
+        <button onClick={handleMoreProjectsClick}>More Projects</button>
       </div>
+      <Popup isActive={isPopupActive} onClose={handlePopupClose} />
     </section>
   );
 };
