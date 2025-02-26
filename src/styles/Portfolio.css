@@ -19,7 +19,7 @@
     padding-bottom: 1.875rem;
     border-radius: 1.125rem;
     margin-bottom: -1.875rem;
-    border: 0.063rem solid var(--border-color);
+    border: 0.094rem solid var(--border-color);
     background: black;
 }
 
@@ -208,7 +208,7 @@
     content: '';
     position: absolute;
     bottom: -1.25rem;
-    height: 0.063rem;
+    height: 0.094rem;
     width: 100%;
     background: var(--border-color);
 }
@@ -241,11 +241,12 @@
 
 .portfolio-popup>.wrapper {
     margin: 0 4rem;
-    border: 0.063rem solid var(--border-color);
+    border: 0.094rem solid var(--border-color);
     border-radius: 1.25rem;
     overflow-y: scroll;
     height: calc(100vh - 15rem);
     background: black;
+    padding-right: 1rem;
 }
 
 .portfolio-popup .btn-wrapper button {

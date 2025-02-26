@@ -10,6 +10,7 @@ import RealTalk from "./components/RealTalk";
 import Clock from "./components/Clock";
 import Perks from "./components/Perks";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Numbers />
       <RealTalk />
       <Clock />
+      <Contact />
       <Footer />
     </>
   );
