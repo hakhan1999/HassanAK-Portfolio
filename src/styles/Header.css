@@ -134,3 +134,11 @@ nav ul.navbar li a {
     display: flex;
     align-items: center;
 }
+
+nav ul.navbar li.active a:before {
+    opacity: 1;
+}
+
+nav ul.navbar li.active a::after {
+    opacity: 1;
+}

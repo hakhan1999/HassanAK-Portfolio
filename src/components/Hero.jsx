@@ -30,7 +30,7 @@ const Hero = () => {
   }, [targetPos]);
 
   return (
-    <section className="hero-sec cursor-sec">
+    <section className="hero-sec cursor-sec" id="hero">
       <div
         className="cursor"
         style={{

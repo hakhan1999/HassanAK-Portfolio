@@ -81,7 +81,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="portfolio-sec container sec-padded" id="#portfolio">
+    <section className="portfolio-sec container sec-padded" id="portfolio">
       <div className="tag">{`{ Portfolio }`}</div>
       <h2>
         Here are <span>my projects</span>

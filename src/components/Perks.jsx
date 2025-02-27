@@ -89,7 +89,7 @@ const Perks = () => {
     smoothMove();
   }, [targetPos]);
   return (
-    <section className="perks-sec cursor-sec" id="#perks">
+    <section className="perks-sec cursor-sec" id="perks">
       <div
         className="cursor"
         style={{
