@@ -2,22 +2,28 @@ import React from "react";
 import "../styles/Toolkit.css";
 
 const techStack = [
+  "HTML5",
+  "CSS3",
+  "Javascript",
+  "React JS",
+  "jQuery",
+  "Tailwind CSS",
+  "SCSS",
+  "Bootstrap",
+  "Framer Motion",
   "GSAP",
-  "ZAPIER",
-  "MAKE.COM",
-  "BASIN",
-  "RECAPTCHA",
-  "GTM",
-  "GA4",
-  "CALENDLY",
-  "SWIPER",
-  "MAPBOX",
-  "MEMBERSTACK",
-  "GOOGLE MAPS",
-  "CONVERTKIT",
-  "FS ATTRIBUTES",
-  "WEGLOT",
-  "MAILCHIMP",
+  "Swiper JS",
+  "Slick",
+  "Splide",
+  "React Router DOM",
+  "React Hook Form",
+  "ShadCN",
+  "WordPress",
+  "Shopify",
+  "Woocommerce",
+  "Elementor",
+  "Wp Bakery",
+  "Contact Form 7",
 ];
 
 const Toolkit = () => {
@@ -41,6 +47,11 @@ const Toolkit = () => {
               and WordPress customizations.
             </p>
           </div>
+          <ul className="techUsed">
+            {techStack.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
