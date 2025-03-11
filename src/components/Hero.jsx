@@ -52,9 +52,9 @@ const Hero = () => {
           <img src="src/assets/images/pc-floating.webp" alt="Floating PC" />
         </div>
         <h1>
-          <span className="top">Hassan</span>
-          <span className="middle">Creative</span>
-          <span className="bottom">Developer</span>
+          <span className="top scramble-text">Hassan</span>
+          <span className="middle scramble-text">Creative</span>
+          <span className="bottom scramble-text">Developer</span>
         </h1>
         <div className="tag tag-1">{`{ Welcome to my site }`}</div>
         <div className="tag tag-2">{`{ Front-End Developer }`}</div>

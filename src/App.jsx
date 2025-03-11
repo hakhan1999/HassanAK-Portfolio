@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactLenis, useLenis } from "lenis/react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
@@ -14,10 +13,8 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 
 const App = () => {
-  useLenis(({ scroll }) => {});
-
   return (
-    <ReactLenis root>
+    <>
       <Header />
       <Hero />
       <Info />
@@ -30,7 +27,7 @@ const App = () => {
       <Clock />
       <Contact />
       <Footer />
-    </ReactLenis>
+    </>
   );
 };
 
