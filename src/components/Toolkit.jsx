@@ -7,6 +7,8 @@ const techStack = [
   "CSS3",
   "Javascript",
   "React JS",
+  "Next JS",
+  "Gulp JS",
   "jQuery",
   "Tailwind CSS",
   "SCSS",

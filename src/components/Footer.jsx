@@ -34,7 +34,7 @@ const contactLinks = [
   },
 ];
 
-const LegalLinks = [{ id: 1, name: "Privacy Policy", path: "#" }];
+const LegalLinks = [{ id: 1, name: "Privacy Policy", path: "/privacy-policy" }];
 
 const Footer = () => {
   return (

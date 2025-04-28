@@ -1,36 +1,18 @@
-import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Info from "./components/Info";
-import Services from "./components/Services";
-import Toolkit from "./components/Toolkit";
-import Numbers from "./components/Numbers";
-import Footer from "./components/Footer";
-import RealTalk from "./components/RealTalk";
-import Clock from "./components/Clock";
-import Perks from "./components/Perks";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Preloader from "./components/Preloader";
+import { Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Home from "./pages/Home";
+import ScrollToTop from "./components/ScrollToTop";
 
-const App = () => {
+function App() {
   return (
     <>
-      {/* <Preloader /> */}
-      <Header />
-      <Hero />
-      <Info />
-      <Services />
-      <Toolkit />
-      <Portfolio />
-      <Perks />
-      <Numbers />
-      <RealTalk />
-      <Clock />
-      <Contact />
-      <Footer />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
     </>
   );
-};
+}
 
 export default App;

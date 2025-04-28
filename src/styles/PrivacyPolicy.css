@@ -1,0 +1,42 @@
+.container-privacy {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.privacy-policy .btn-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+
+.privacy-policy p {
+    margin-bottom: 2.5rem;
+}
+
+.privacy-policy p.bold {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+
+.privacy-policy h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-policy ul {
+    margin-bottom: 2.5rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.privacy-policy ul li {
+    list-style: disc;
+    font-size: var(--para-size);
+}
+
+.privacy-policy a {
+    text-decoration: underline;
+}
