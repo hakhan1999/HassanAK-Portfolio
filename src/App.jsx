@@ -11,10 +11,12 @@ import Clock from "./components/Clock";
 import Perks from "./components/Perks";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Preloader from "./components/Preloader";
 
 const App = () => {
   return (
     <>
+      <Preloader />
       <Header />
       <Hero />
       <Info />
