@@ -88,6 +88,7 @@ const Footer = () => {
           </div>
           <div className="col-5">
             <p>HASSAN AHMED KHAN © 2025 | ALL RIGHTS RESERVED</p>
+            <p>MADE WITH ❤️ BY ME 😎 </p>
           </div>
         </div>
       </div>

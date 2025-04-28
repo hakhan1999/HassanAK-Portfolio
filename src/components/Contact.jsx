@@ -3,12 +3,20 @@ import "../styles/Contact.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const form = useRef();
   const [statusMessage, setStatusMessage] = useState("");
   const [statusType, setStatusType] = useState(""); // "success" or "error"
   const [selectedServices, setSelectedServices] = useState([]);
+  // Recaptcha State
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
+
+  // Recaptcha Handler
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
 
   const handleCheckboxChange = (e) => {
     const { value, checked } = e.target;
@@ -33,6 +41,13 @@ const Contact = () => {
       return;
     }
 
+    // Captcha Validation
+    if (!recaptchaValue) {
+      setStatusMessage("Please complete the reCAPTCHA.");
+      setStatusType("error");
+      return;
+    }
+
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -44,6 +59,7 @@ const Contact = () => {
       setStatusType("success");
       form.current.reset();
       setSelectedServices([]);
+      setRecaptchaValue(null); // Reset reCAPTCHA state after sending
     } catch (error) {
       setStatusMessage("Failed to send message. Please try again.");
       setStatusType("error");
@@ -123,6 +139,10 @@ const Contact = () => {
                   <Link to="/privacy-policy/">Privacy Policy.</Link>
                 </p>
               </div>
+              <ReCAPTCHA
+                sitekey={import.meta.env.VITE_GOOGLE_CAPTCHA_SITE_KEY}
+                onChange={handleRecaptchaChange}
+              />
               <div className="form-row submit">
                 <input type="submit" value="Send" />
               </div>

@@ -3,6 +3,12 @@
     padding-right: 10rem;
 }
 
+.privacy-policy{
+    background-image: url(../assets/images/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .privacy-policy .btn-wrapper {
     justify-content: flex-start;
     margin-bottom: 3rem;
