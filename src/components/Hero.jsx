@@ -62,7 +62,7 @@ const Hero = () => {
         <div className="tag tag-4">{`{ JavaScript, React and GSAP }`}</div>
         <div className="tag tag-5">{`{ Portfolio ‘25 }`}</div>
         <div className="copyright">
-          HASSAN AK. - - ©2025 ALL COPYRIGHTS RESERVED - -
+          HASSAN AHMED KHAN © 2025 | ALL RIGHTS RESERVED
         </div>
       </div>
     </section>

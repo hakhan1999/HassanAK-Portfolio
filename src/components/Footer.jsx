@@ -12,8 +12,17 @@ const menuLinks = [
 ];
 
 const externalLinks = [
-  { id: 1, name: "Facebook", path: "#" },
-  { id: 2, name: "LinkedIn", path: "#" },
+  {
+    id: 1,
+    name: "Facebook",
+    path: "https://www.facebook.com/hassaan.ahmedkhan.7",
+  },
+  {
+    id: 2,
+    name: "LinkedIn",
+    path: "https://www.linkedin.com/in/hassan-ahmed-khan-533772233/",
+  },
+  { id: 3, name: "Github", path: "https://github.com/hakhan1999" },
 ];
 
 const contactLinks = [
@@ -50,7 +59,9 @@ const Footer = () => {
             <ul>
               {externalLinks.map((item) => (
                 <li key={item.id}>
-                  <Link to={item.path}>{item.name}</Link>
+                  <Link to={item.path} target="_blank">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -76,7 +87,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-5">
-            <p>HASSAN AK. - - ©2025 ALL COPYRIGHTS RESERVED - -</p>
+            <p>HASSAN AHMED KHAN © 2025 | ALL RIGHTS RESERVED</p>
           </div>
         </div>
       </div>
