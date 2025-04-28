@@ -16,7 +16,7 @@ import Preloader from "./components/Preloader";
 const App = () => {
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <Header />
       <Hero />
       <Info />

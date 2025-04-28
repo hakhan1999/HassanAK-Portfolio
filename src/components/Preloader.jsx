@@ -37,6 +37,8 @@ const Preloader = ({ onFinish }) => {
             opacity: 0,
             duration: 0.8,
             ease: "power2.out",
+            visibility: "hidden",
+            pointerEvents: "none",
           }) // then fade out entire preloader
           .to(topRef.current, { y: "-100%", duration: 1, ease: "power4.in" }, 0) // slide out top
           .to(

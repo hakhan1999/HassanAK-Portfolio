@@ -18,6 +18,7 @@
 
 .testimonials-wrapper {
     margin-top: 3rem;
+    perspective: 2000px;
 }
 
 .real-talk-sec .testimonial:last-child {

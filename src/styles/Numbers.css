@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 6rem;
     margin-top: 3rem;
+    perspective: 2000px;
 }
 
 .numbers-sec .wrapper .number-card .symbol {

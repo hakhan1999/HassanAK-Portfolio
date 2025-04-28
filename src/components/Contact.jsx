@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "../styles/Contact.css";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
+import Tilt from "react-parallax-tilt";
 
 const Contact = () => {
   const form = useRef();
@@ -60,7 +61,16 @@ const Contact = () => {
             </h2>
           ))}
         </div>
-        <div className="form-col">
+        <Tilt
+          tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          scale={1.02}
+          transitionSpeed={2000}
+          glareEnable={true}
+          perspective={5000}
+          gyroscope={true}
+          className="form-col"
+        >
           <form ref={form} onSubmit={sendEmail}>
             <div className="form-wrapper">
               <div className="form-row twoCol">
@@ -101,7 +111,11 @@ const Contact = () => {
               </div>
               <div className="form-row">
                 <label>Tell me about your project*</label>
-                <textarea className="textArea" name="message" required></textarea>
+                <textarea
+                  className="textArea"
+                  name="message"
+                  required
+                ></textarea>
               </div>
               <div className="form-row">
                 <p>
@@ -119,7 +133,7 @@ const Contact = () => {
               )}
             </div>
           </form>
-        </div>
+        </Tilt>
       </div>
     </section>
   );

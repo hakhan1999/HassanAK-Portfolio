@@ -1,9 +1,19 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const Testimonial = ({ reviewLong, reviewShort, name, tech }) => {
   return (
     <div className="testimonial">
-      <div className="left-col">
+      <Tilt
+        tiltMaxAngleX={20}
+        tiltMaxAngleY={20}
+        scale={1.02}
+        transitionSpeed={2000}
+        glareEnable={false}
+        perspective={2000}
+        gyroscope={true}
+        className="left-col"
+      >
         <div className="card">
           <p>{reviewLong}</p>
         </div>
@@ -13,7 +23,7 @@ const Testimonial = ({ reviewLong, reviewShort, name, tech }) => {
             alt="Testimonial Arrow"
           />
         </div>
-      </div>
+      </Tilt>
       <div className="right-col">
         <div className="top-quote">“</div>
         <h3>{reviewShort}</h3>

@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 import "../styles/Toolkit.css";
 
 const techStack = [
@@ -49,7 +50,18 @@ const Toolkit = () => {
           </div>
           <ul className="techUsed">
             {techStack.map((item, index) => (
-              <li key={index}>{item}</li>
+              <Tilt
+                tiltMaxAngleX={50}
+                tiltMaxAngleY={50}
+                scale={1.02}
+                transitionSpeed={5000}
+                glareEnable={false}
+                perspective={5000}
+                gyroscope={true}
+                key={index}
+              >
+                <li>{item}</li>
+              </Tilt>
             ))}
           </ul>
         </div>

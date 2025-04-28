@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     background-color: black;
+    opacity: 1;
 }
 
 .preloader .wrapper {
@@ -52,8 +53,4 @@
 .loading-line {
     opacity: 1;
     transition: all 0.4s ease-out;
-}
-
-.preloader {
-    opacity: 1;
 }

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    perspective: 5000px;
 }
 
 .contact-sec .wrapper .content-col,
@@ -21,6 +22,7 @@
     border: 0.094rem solid var(--border-color);
     border-radius: 1.25rem;
     padding: 2rem;
+    overflow: hidden;
 }
 
 .form-col .form-row.twoCol {

@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import Tilt from "react-parallax-tilt";
 
 const ServicesCard = ({ title, description }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleClass = () => {
-    setIsActive(!isActive);
-  };
   return (
-    <div
-      onClick={toggleClass}
-      className={`services-card ${isActive ? "active" : ""}`}
+    <Tilt
+      tiltMaxAngleX={15}
+      tiltMaxAngleY={15}
+      scale={1.02}
+      transitionSpeed={2000}
+      glareEnable={true}
+      perspective={2000}
+      gyroscope={true}
+      className="services-card"
     >
       <div className="bg-image">
         <img
@@ -21,7 +23,7 @@ const ServicesCard = ({ title, description }) => {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </Tilt>
   );
 };
 

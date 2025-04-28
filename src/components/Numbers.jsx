@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-parallax-tilt";
 import "../styles/Numbers.css";
 
 const numbersContent = [
@@ -33,12 +34,22 @@ const Numbers = () => {
       <div className="tag ">{`{ some cool numbers }`}</div>
       <div className="wrapper">
         {numbersContent.map((item, index) => (
-          <div key={index} className={`number-card card-${item.id}`}>
+          <Tilt
+            tiltMaxAngleX={20}
+            tiltMaxAngleY={20}
+            scale={1.02}
+            transitionSpeed={2000}
+            glareEnable={true}
+            perspective={2000}
+            gyroscope={true}
+            key={index}
+            className={`number-card card-${item.id}`}
+          >
             <div className="symbol">{item.symbol}</div>
             <div className="number">{item.number}</div>
             <div className="title">{item.title}</div>
             <p className="paragraph">{item.paragraph}</p>
-          </div>
+          </Tilt>
         ))}
       </div>
     </section>

@@ -14,6 +14,11 @@ const servicesContent = [
       "I develop custom JavaScript solutions to enhance functionality and interactivity. From dynamic UI components to complex logic, I build tailored features. My code is optimized for performance, scalability, and maintainability. I ensure smooth and seamless user experiences across all devices.",
   },
   {
+    title: "<Custom React JS Solutions/>",
+    description:
+      "I craft custom React.js solutions that bring dynamic, high-performance user interfaces to life. From reusable components to complex state management, I build scalable and maintainable applications tailored to your needs. My focus is on creating smooth, responsive experiences optimized for all devices and modern web standards.",
+  },
+  {
     title: "<Animations (GSAP)/>",
     description:
       "I create smooth and engaging animations using GSAP for a dynamic user experience. From subtle effects to complex motion graphics, I bring interfaces to life. My animations are optimized for performance and responsiveness. Every interaction feels fluid, enhancing usability and visual appeal.",

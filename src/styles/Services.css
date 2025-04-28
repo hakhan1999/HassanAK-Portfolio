@@ -1,8 +1,10 @@
 .cards-wrapper {
     margin-top: 4rem;
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    perspective: 2000px;
 }
 
 .cards-wrapper .services-card {
@@ -11,11 +13,10 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    cursor: pointer;
 }
 
 .services-card .wrapper {
-    padding: 2.75rem 5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -23,18 +24,18 @@
 }
 
 .services-card .wrapper h3 {
-    color: var(--grey);
-    width: fit-content;
     margin: 0 auto;
     position: relative;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    width: 80%;
 }
 
 .services-card .wrapper p {
     width: 90%;
     margin: 0 auto;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
     transition: all 0.4s ease-out;
 }
 
@@ -64,23 +65,13 @@
     height: 100%;
     z-index: -1;
     transition: all 0.4s ease-out;
-    opacity: 0;
-}
-
-.services-card.active .bg-image {
-    opacity: 1;
-}
-
-.services-card.active .wrapper p {
-    max-height: 62.5rem;
-    opacity: 1;
 }
 
 .services-card.active {
     transform: translateY(-0.313rem);
 }
 
-.services-card.active .wrapper h3 {
-    color: white;
-    margin-bottom: 2rem;
+
+.bg-image img {
+    height: 100%;
 }
