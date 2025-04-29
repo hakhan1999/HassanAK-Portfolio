@@ -12,8 +12,11 @@ import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
+import { useHackerText } from "../hooks/useHackerText";
 
-const App = () => {
+const Home = () => {
+  useHackerText();
+
   return (
     <>
       {/* <Preloader /> */}
@@ -33,4 +36,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

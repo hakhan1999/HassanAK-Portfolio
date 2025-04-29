@@ -135,7 +135,7 @@ const Contact = () => {
               </div>
               <div className="form-row">
                 <p>
-                  By submitting this form, you agree to our{" "}
+                  By submitting this form, you agree to this website{" "}
                   <Link to="/privacy-policy/">Privacy Policy.</Link>
                 </p>
               </div>

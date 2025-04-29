@@ -83,9 +83,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio-sec container sec-padded" id="portfolio">
       <div className="tag">{`{ Portfolio }`}</div>
-      <h2>
-        Here are <span>my projects</span>
-      </h2>
+      <h2>Here are my projects</h2>
       <div className="projects-wrapper">
         {projectsContent.map((item) => (
           <Project key={item.id} project={item} />

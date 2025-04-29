@@ -22,7 +22,7 @@ const numbersContent = [
   {
     id: "3",
     symbol: "+",
-    number: "4",
+    number: "04",
     title: "years of experience",
     paragraph:
       "Over 4 years of indusrty experience, mastering skill sets and delivering top-notch work consistently",

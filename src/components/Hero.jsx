@@ -51,11 +51,11 @@ const Hero = () => {
         <div className="floating-image">
           <img src="src/assets/images/pc-floating.webp" alt="Floating PC" />
         </div>
-        <h1>
-          <span className="top scramble-text">Hassan</span>
-          <span className="middle scramble-text">Creative</span>
-          <span className="bottom scramble-text">Developer</span>
-        </h1>
+        <div>
+          <h1 className="top scramble-text">Hassan</h1>
+          <h1 className="middle scramble-text">Creative</h1>
+          <h1 className="bottom scramble-text">Developer</h1>
+        </div>
         <div className="tag tag-1">{`{ Welcome to my site }`}</div>
         <div className="tag tag-2">{`{ Front-End Developer }`}</div>
         <div className="tag tag-3">{`{ Creative Development }`}</div>

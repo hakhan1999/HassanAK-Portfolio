@@ -39,9 +39,7 @@ const Toolkit = () => {
         <div className="sec-padded container">
           <div className="top-content">
             <div className="tag">{`{ Tech Stack }`}</div>
-            <h2>
-              Stuff I use <span>in development</span>
-            </h2>
+            <h2>Stuff I use in development</h2>
             <p>
               A well-curated collection of JavaScript libraries, third-party
               services, and integrations is integral to my development process.

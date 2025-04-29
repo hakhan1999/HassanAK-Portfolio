@@ -78,19 +78,22 @@
     bottom: 20rem;
 }
 
-.hero-sec h1 span.top {
+.hero-sec .top {
+    position: absolute;
     top: 20rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.hero-sec h1 span.middle {
+.hero-sec .middle {
+    position: absolute;
     left: 4rem;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.hero-sec h1 span.bottom {
+.hero-sec .bottom {
+    position: absolute;
     right: 4rem;
     bottom: 25rem;
     color: transparent;
